@@ -1,0 +1,110 @@
+html, body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+/* content style */
+.wrapper {
+  max-width: 700px;
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.cells {
+  width: 100%;
+}
+
+.row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cell {
+  -webkit-flex: 1 1 150px;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  margin: 5px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  transition: all 1s ease;
+  background: #0E3B99;
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* rotate effect */
+.rotate180 {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);       
+}
+
+
+.for-button {
+  margin: 30px 0 0;
+}
+
+.btn {
+  max-width: 140px;
+  width: 100%;
+  background: #0E3B99;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+}
+.btn:hover, .btn:active, .btn.in-progress {
+  background: #000D6B;
+}
+
+/* Modal window style */
+.modal-window {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: none;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0,0,0, .4);
+}
+.modal-window div {
+  -webkit-flex: 1 1 300px;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  max-width: 350px;
+  height: 200px;
+  border: 2px solid #000D6B;
+  background: #fff;
+  text-align: center;
+}
+.modal-window p {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 55px 0 0;
+  color: #000D6B;
+}
+.modal-window .btn {
+  margin: 45px 0 0;
+}
